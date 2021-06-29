@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.leyou.item.mapper.BrandMapper">
+    <!-- 保存分类品牌   -->
+    <!--
+       collection: 需要遍历的数据
+       item: 每个元素的别名
+       separator: 每个元素的分隔符
+     -->
+    <insert id="saveCategoryAndBrand">
+        INSERT INTO tb_category_brand(category_id,brand_id) VALUES
+        <foreach collection="cids" item="cid" separator=",">
+            (#{cid},#{bid})
+        </foreach>
+    </insert>
+</mapper>

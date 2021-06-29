@@ -1,0 +1,31 @@
+server:
+  port: 8086
+spring:
+  application:
+    name: user-service
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.100.100:3306/leyou?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true&useSSL=true
+    username: root
+    password: root
+  redis:
+    host: 192.168.100.100
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.100.100:8848
+
+rocketmq:
+  # 指定连接的nameserver注册中心地址
+  name-server: 192.168.100.100:9876
+  # 指定生产者组名称，相同业务的生产者作为一组。具有一样组名称的生产者作为一个集群。可以随意定义，唯一。
+  producer:
+    group: leyouSmsGroup
+
+mybatis-plus:
+  type-aliases-package: com.leyou.user.pojo
+  configuration:
+    map-underscore-to-camel-case: true
+logging:
+  level:
+    com.leyou: debug

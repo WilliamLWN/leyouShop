@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ly-auth" />
+        <module name="ly-cart" />
+        <module name="ly-client-item" />
+        <module name="ly-client-user" />
+        <module name="ly-common" />
+        <module name="ly-gateway" />
+        <module name="ly-item" />
+        <module name="ly-lock-demo" />
+        <module name="ly-order" />
+        <module name="ly-page" />
+        <module name="ly-pojo-cart" />
+        <module name="ly-pojo-item" />
+        <module name="ly-pojo-order" />
+        <module name="ly-pojo-search" />
+        <module name="ly-pojo-user" />
+        <module name="ly-search" />
+        <module name="ly-sharding-sphere" />
+        <module name="ly-sms" />
+        <module name="ly-upload" />
+        <module name="ly-user" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

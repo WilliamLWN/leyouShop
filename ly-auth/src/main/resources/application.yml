@@ -1,0 +1,21 @@
+server:
+  port: 8087
+spring:
+  application:
+    name: auth-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.100.100:8848
+  redis:
+    host: 192.168.100.100
+
+ly:
+  jwt:
+    pubKeyPath: D:\software\rsa_key\rsa-key.pub # 公钥地址
+    priKeyPath: D:\software\rsa_key\rsa-key # 私钥地址
+    cookie:
+      expire: 30 #过期时间设置 单位分钟
+      refreshTime: 15 #过期时间设置，单位分钟
+      cookieName: LY_TOKEN # cookie名称
+      cookieDomain: leyou.com # cookie的域

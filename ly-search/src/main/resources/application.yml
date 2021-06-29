@@ -1,0 +1,16 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: search-service
+  data:
+    elasticsearch:
+      cluster-name: docker-cluster
+      cluster-nodes: 192.168.100.100:9300
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.100.100:8848
+rocketmq:
+  # 指定连接的nameserver注册中心地址
+  name-server: 192.168.100.100:9876

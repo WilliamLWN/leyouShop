@@ -1,0 +1,17 @@
+server:
+  port: 8085
+spring:
+  application:
+    name: sms-service
+rocketmq:
+  # 指定连接的nameserver注册中心地址
+  name-server: 192.168.100.100:9876
+
+ly:
+  sms:
+    accessKeyID: LTAI5tMrhBrp4dGMEPZ8T1vf # 你自己的accessKeyId
+    accessKeySecret: WHoiXIoasG1qqh9bKuP9VM1PnQeny7 # 你自己的AccessKeySecret
+    endpoint: dysmsapi.aliyuncs.com
+    signName: leyou商城 # 签名名称
+    verifyCodeTemplate: SMS_201716517 # 模板名称
+    code: code # 短信模板中验证码的占位符

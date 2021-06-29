@@ -1,0 +1,18 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: page-service
+  thymeleaf:
+    cache: false
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.100.100:8848
+ly:
+  static:
+    itemDir: D:\nginx-1.16.0\html\item #静态页服务器地址
+    itemTemplate: item #模板名称
+rocketmq:
+  # 指定连接的nameserver注册中心地址
+  name-server: 192.168.100.100:9876

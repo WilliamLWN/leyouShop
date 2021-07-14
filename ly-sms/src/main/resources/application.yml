@@ -9,9 +9,9 @@ rocketmq:
 
 ly:
   sms:
-    accessKeyID: LTAI5tMrhBrp4dGMEPZ8T1vf # 你自己的accessKeyId
-    accessKeySecret: WHoiXIoasG1qqh9bKuP9VM1PnQeny7 # 你自己的AccessKeySecret
-    endpoint: dysmsapi.aliyuncs.com
-    signName: leyou商城 # 签名名称
-    verifyCodeTemplate: SMS_201716517 # 模板名称
+    accessKeyID:  # 你自己的accessKeyId
+    accessKeySecret:  # 你自己的AccessKeySecret
+    endpoint: 
+    signName:  # 签名名称
+    verifyCodeTemplate:  # 模板名称
     code: code # 短信模板中验证码的占位符
